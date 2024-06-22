@@ -18,7 +18,7 @@ if __name__ == '__main__':
     parser.add_argument("timeout", type=int)
     parser.add_argument("-seed", type=int, default=1)
     args = parser.parse_args()
-    print(f'Input arguments: {args}')
+    print(args)
     time.sleep(2)
     config = ConfigParser()
 
@@ -37,20 +37,21 @@ if __name__ == '__main__':
 
     # Select target knobs, write your api_base and api_key
     dbms._connect("benchbase")
-    knob_selection = KnobSelection(db=args.db, dbms=dbms, benchmark=args.test, api_base="your_api_base", api_key="your_api_key", model="gpt-4")
+    knob_selection = KnobSelection(db=args.db, dbms=dbms, benchmark=args.test, api_base="https://api.xiaoai.plus/v1", api_key="sk-FxmvAoiLMVZcWURg9dCb78B071D2446a9d33C3153bE6C1D9", model="gpt-3.5-turbo")
     knob_selection.select_interdependent_all_knobs()
 
 
     # prepare tuning lake and structured knowledge
-    target_knobs_path = f"/home/knob/revision/GPTuner/knowledge_collection/postgres/target_knobs.txt"
+    target_knobs_path = "/home/yjn/Desktop/work-2/GPTuner/knowledge_collection/postgres/target_knobs.txt"
+    # target_knobs_path = "/home/knob/revision/GPTuner/knowledge_collection/postgres/target_knobs.txt"
     with open(target_knobs_path, 'r') as file:
         lines = file.readlines()
         target_knobs = [line.strip() for line in lines]
 
 
     # write your api_base and api_key
-    knowledge_pre = KGPre(db=args.db, api_base="your_api_base", api_key="your_api_key", model="gpt-4")
-    knowledge_trans = KGTrans(db=args.db, api_base="your_api_base", api_key="your_api_key", model="gpt-4")
+    knowledge_pre = KGPre(db=args.db, api_base="https://api.xiaoai.plus/v1", api_key="sk-FxmvAoiLMVZcWURg9dCb78B071D2446a9d33C3153bE6C1D9", model="gpt-3.5-turbo")
+    knowledge_trans = KGTrans(db=args.db, api_base="https://api.xiaoai.plus/v1", api_key="sk-FxmvAoiLMVZcWURg9dCb78B071D2446a9d33C3153bE6C1D9", model="gpt-3.5-turbo")
     for knob in target_knobs:
         knowledge_pre.pipeline(knob)
         knowledge_trans.pipeline(knob)
@@ -81,7 +82,7 @@ if __name__ == '__main__':
 
     gptuner_coarse.optimize(
         name = f"../optimization_results/{args.db}/coarse/", 
-        trials_number=30, 
+        trials_number=10, 
         initial_config_number=10)
     time.sleep(20)
 
@@ -96,6 +97,6 @@ if __name__ == '__main__':
 
     gptuner_fine.optimize(
         name = f"../optimization_results/{args.db}/fine/",
-        trials_number=110 # history trials + new tirals
+        trials_number=10 # history trials + new tirals
     )   
 

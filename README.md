@@ -67,7 +67,7 @@ sudo pip install -r requirements.txt
 - Note: modify `src/run_gptuner.py` to set up your `api_base`, `api_key` and `model` first
 ```
 # PYTHONPATH=src python src/run_gptuner.py <dbms> <benchmark> <timeout> <seed>
-PYTHONPATH=src python src/run_gptuner.py postgres tpch 180 -seed=100
+PYTHONPATH=src python3 src/run_gptuner.py postgres tpch 180 -seed=100
 ```
 where `<dbms>` specifies the DBMS (e.g., postgres or mysql), `<benchmark>` is the target workload (e.g., tpch or tpcc), `<timeout>` is the maximum time allowed to stress-test the benchmark, `<seed>` is the random seed used by the optimizer.
 
