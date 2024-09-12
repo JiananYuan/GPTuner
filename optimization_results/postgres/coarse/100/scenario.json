@@ -574,7 +574,7 @@
         },
         "random_design": {
             "name": "ProbabilityRandomDesign",
-            "seed": 100,
+            "seed": 0,
             "probability": 0.2
         },
         "runhistory_encoder": {
@@ -595,7 +595,7 @@
             "retries": 16,
             "min_trials": 1
         },
-        "version": "2.1.0"
+        "version": "2.0.2"
     },
     "output_directory": "smac3_output/../optimization_results/postgres/coarse/100"
 }

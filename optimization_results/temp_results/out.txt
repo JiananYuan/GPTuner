@@ -1,4 +1,4 @@
-[INFO ] 2024-06-22 16:24:30,286 [main]  com.oltpbenchmark.DBWorkload main - ======================================================================
+[INFO ] 2024-06-23 16:59:17,356 [main]  com.oltpbenchmark.DBWorkload main - ======================================================================
 
 Benchmark:                       TPCH {com.oltpbenchmark.benchmarks.tpch.TPCHBenchmark}
 Configuration:                   config/postgres/sample_tpch_config.xml
@@ -12,27 +12,27 @@ Terminals:                       1
 New Connection Per Txn:          false
 Reconnect on Connection Failure: true
 
-[INFO ] 2024-06-22 16:24:30,286 [main]  com.oltpbenchmark.DBWorkload main - ======================================================================
-[INFO ] 2024-06-22 16:24:30,308 [main]  com.oltpbenchmark.DBWorkload main - Timer disabled for serial run; will execute all queries exactly once.
-[WARN ] 2024-06-22 16:24:30,309 [main]  com.oltpbenchmark.DBWorkload main - rounded weight [22] does not equal 100.  Original weight is [22.0]
-[INFO ] 2024-06-22 16:24:30,421 [main]  com.oltpbenchmark.DBWorkload runWorkload - Creating 1 virtual terminals...
-[INFO ] 2024-06-22 16:24:30,421 [main]  com.oltpbenchmark.benchmarks.tpch.TPCHBenchmark makeWorkersImpl - Creating 1 workers for TPC-H
-[INFO ] 2024-06-22 16:24:30,427 [main]  com.oltpbenchmark.DBWorkload runWorkload - Launching the TPCH Benchmark with 1 Phase...
-[INFO ] 2024-06-22 16:24:30,429 [main]  com.oltpbenchmark.ThreadBench runRateLimitedMultiPhase - [0;1mPHASE START[0;0m :: [Workload=TPCH] [Serial=true] [Time=n/a] [WarmupTime=0] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]] [ActiveWorkers=1]
-[INFO ] 2024-06-22 16:24:32,368 [TPCHWorker<000>]  com.oltpbenchmark.api.Worker getTransactionType - [Serial] Updating workload state to LATENCY_COMPLETE.
-[INFO ] 2024-06-22 16:24:32,430 [main]  com.oltpbenchmark.ThreadBench runRateLimitedMultiPhase - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
-[INFO ] 2024-06-22 16:24:32,431 [Thread-1]  com.oltpbenchmark.ThreadBench run - Starting WatchDogThread
-[INFO ] 2024-06-22 16:24:32,434 [main]  com.oltpbenchmark.DBWorkload runWorkload - ======================================================================
-[INFO ] 2024-06-22 16:24:32,435 [main]  com.oltpbenchmark.DBWorkload runWorkload - Rate limited reqs/s: Results(state=EXIT, nanoSeconds=2000146306, measuredRequests=22) = 10.99919537586067 requests/sec (throughput), 21.99839075172134 requests/sec (goodput)
-[INFO ] 2024-06-22 16:24:32,499 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output Raw data into file: tpch_2024-06-22_16-24-32.raw.csv
-[INFO ] 2024-06-22 16:24:32,502 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output samples into file: tpch_2024-06-22_16-24-32.samples.csv
-[INFO ] 2024-06-22 16:24:32,503 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output summary data into file: tpch_2024-06-22_16-24-32.summary.json
-[INFO ] 2024-06-22 16:24:32,508 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output DBMS parameters into file: tpch_2024-06-22_16-24-32.params.json
-[INFO ] 2024-06-22 16:24:32,511 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output DBMS metrics into file: tpch_2024-06-22_16-24-32.metrics.json
-[INFO ] 2024-06-22 16:24:32,515 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output benchmark config into file: tpch_2024-06-22_16-24-32.config.xml
-[INFO ] 2024-06-22 16:24:32,537 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output results into file: tpch_2024-06-22_16-24-32.results.csv with window size 5
-[INFO ] 2024-06-22 16:24:32,546 [main]  com.oltpbenchmark.DBWorkload writeHistograms - ======================================================================
-[INFO ] 2024-06-22 16:24:32,546 [main]  com.oltpbenchmark.DBWorkload writeHistograms - Workload Histograms:
+[INFO ] 2024-06-23 16:59:17,358 [main]  com.oltpbenchmark.DBWorkload main - ======================================================================
+[INFO ] 2024-06-23 16:59:17,406 [main]  com.oltpbenchmark.DBWorkload main - Timer disabled for serial run; will execute all queries exactly once.
+[WARN ] 2024-06-23 16:59:17,406 [main]  com.oltpbenchmark.DBWorkload main - rounded weight [22] does not equal 100.  Original weight is [22.0]
+[INFO ] 2024-06-23 16:59:17,641 [main]  com.oltpbenchmark.DBWorkload runWorkload - Creating 1 virtual terminals...
+[INFO ] 2024-06-23 16:59:17,642 [main]  com.oltpbenchmark.benchmarks.tpch.TPCHBenchmark makeWorkersImpl - Creating 1 workers for TPC-H
+[INFO ] 2024-06-23 16:59:17,659 [main]  com.oltpbenchmark.DBWorkload runWorkload - Launching the TPCH Benchmark with 1 Phase...
+[INFO ] 2024-06-23 16:59:17,663 [main]  com.oltpbenchmark.ThreadBench runRateLimitedMultiPhase - [0;1mPHASE START[0;0m :: [Workload=TPCH] [Serial=true] [Time=n/a] [WarmupTime=0] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]] [ActiveWorkers=1]
+[INFO ] 2024-06-23 16:59:23,302 [TPCHWorker<000>]  com.oltpbenchmark.api.Worker getTransactionType - [Serial] Updating workload state to LATENCY_COMPLETE.
+[INFO ] 2024-06-23 16:59:23,664 [main]  com.oltpbenchmark.ThreadBench runRateLimitedMultiPhase - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+[INFO ] 2024-06-23 16:59:23,665 [Thread-1]  com.oltpbenchmark.ThreadBench run - Starting WatchDogThread
+[INFO ] 2024-06-23 16:59:23,668 [main]  com.oltpbenchmark.DBWorkload runWorkload - ======================================================================
+[INFO ] 2024-06-23 16:59:23,669 [main]  com.oltpbenchmark.DBWorkload runWorkload - Rate limited reqs/s: Results(state=EXIT, nanoSeconds=6000096050, measuredRequests=22) = 3.6666079703840744 requests/sec (throughput), 7.333215940768149 requests/sec (goodput)
+[INFO ] 2024-06-23 16:59:23,724 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output Raw data into file: tpch_2024-06-23_16-59-23.raw.csv
+[INFO ] 2024-06-23 16:59:23,727 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output samples into file: tpch_2024-06-23_16-59-23.samples.csv
+[INFO ] 2024-06-23 16:59:23,732 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output summary data into file: tpch_2024-06-23_16-59-23.summary.json
+[INFO ] 2024-06-23 16:59:23,740 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output DBMS parameters into file: tpch_2024-06-23_16-59-23.params.json
+[INFO ] 2024-06-23 16:59:23,747 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output DBMS metrics into file: tpch_2024-06-23_16-59-23.metrics.json
+[INFO ] 2024-06-23 16:59:23,756 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output benchmark config into file: tpch_2024-06-23_16-59-23.config.xml
+[INFO ] 2024-06-23 16:59:23,795 [main]  com.oltpbenchmark.DBWorkload writeOutputs - Output results into file: tpch_2024-06-23_16-59-23.results.csv with window size 5
+[INFO ] 2024-06-23 16:59:23,808 [main]  com.oltpbenchmark.DBWorkload writeHistograms - ======================================================================
+[INFO ] 2024-06-23 16:59:23,808 [main]  com.oltpbenchmark.DBWorkload writeHistograms - Workload Histograms:
 
 [0;1mCompleted Transactions:[0;0m
 com.oltpbenchmark.benchmarks.tpch.procedures.Q1/01                               [   2] ********************************************************************************
@@ -74,4 +74,4 @@ com.oltpbenchmark.benchmarks.tpch.procedures.Q22/22                             
 <EMPTY>
 
 
-[INFO ] 2024-06-22 16:24:32,546 [main]  com.oltpbenchmark.DBWorkload writeHistograms - ======================================================================
+[INFO ] 2024-06-23 16:59:23,809 [main]  com.oltpbenchmark.DBWorkload writeHistograms - ======================================================================
